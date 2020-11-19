@@ -34,6 +34,7 @@ C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCIO
 C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\bin\Debug\Syncfusion.Tools.Windows.xml
 C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\bin\Debug\Syncfusion.Grid.Windows.XmlSerializers.dll
 C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.csproj.CopyComplete
+<<<<<<< HEAD
 C:\Users\ferna\OneDrive\Escritorio\Sistema_Mantenimiento\Proyecto\SistemaMantenimiento\PROYECTO_PRODUCCION_II\bin\Debug\PROYECTO_PRODUCCION_II.exe.config
 C:\Users\ferna\OneDrive\Escritorio\Sistema_Mantenimiento\Proyecto\SistemaMantenimiento\PROYECTO_PRODUCCION_II\bin\Debug\PROYECTO_PRODUCCION_II.exe
 C:\Users\ferna\OneDrive\Escritorio\Sistema_Mantenimiento\Proyecto\SistemaMantenimiento\PROYECTO_PRODUCCION_II\bin\Debug\PROYECTO_PRODUCCION_II.pdb
@@ -60,3 +61,20 @@ C:\Users\ferna\OneDrive\Escritorio\Sistema_Mantenimiento\Proyecto\SistemaManteni
 C:\Users\ferna\OneDrive\Escritorio\Sistema_Mantenimiento\Proyecto\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.csproj.CopyComplete
 C:\Users\ferna\OneDrive\Escritorio\Sistema_Mantenimiento\Proyecto\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.exe
 C:\Users\ferna\OneDrive\Escritorio\Sistema_Mantenimiento\Proyecto\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.pdb
+=======
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\bin\Debug\PROYECTO_PRODUCCION_II.exe.config
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\bin\Debug\PROYECTO_PRODUCCION_II.exe
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\bin\Debug\PROYECTO_PRODUCCION_II.pdb
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.FrmLogIn.resources
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.FrmMain.resources
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.FrmMantCorrec.resources
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.FrmMantPred.resources
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.FrmMantPrev.resources
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.Properties.Resources.resources
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.csproj.GenerateResource.cache
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.csproj.CoreCompileInputs.cache
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.csproj.CopyComplete
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.exe
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.pdb
+C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.UserControlPrueba.resources
+>>>>>>> Socrates
