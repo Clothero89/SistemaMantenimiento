@@ -1,0 +1,14 @@
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\bin\Debug\PROYECTO_PRODUCCION_II.exe.config
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\bin\Debug\PROYECTO_PRODUCCION_II.exe
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\bin\Debug\PROYECTO_PRODUCCION_II.pdb
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.csprojAssemblyReference.cache
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.FrmLogIn.resources
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.Properties.Resources.resources
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.csproj.GenerateResource.cache
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.csproj.CoreCompileInputs.cache
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.exe
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.pdb
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.FrmMain.resources
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.FrmMantPrev.resources
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.FrmMantCorrec.resources
+C:\Users\Manuel Montalvan\source\repos\PROYECTO_PRODUCCION_II\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.FrmMantPred.resources
