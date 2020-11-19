@@ -98,6 +98,7 @@
     <Compile Include="FrmOrdenMant.Designer.cs">
       <DependentUpon>FrmOrdenMant.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimientp.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogIn.resx">
