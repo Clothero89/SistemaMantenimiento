@@ -72,5 +72,15 @@ namespace PROYECTO_PRODUCCION_II
             frm.MdiParent = this;
             frm.Show();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
