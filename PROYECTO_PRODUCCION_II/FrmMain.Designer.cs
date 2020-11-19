@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.btnMantPred = new System.Windows.Forms.Button();
             this.btnMantCorre = new System.Windows.Forms.Button();
             this.btnOrdenMant = new System.Windows.Forms.Button();
@@ -44,6 +43,7 @@
             this.btnMantPred.TabIndex = 1;
             this.btnMantPred.Text = "Mantenimiento Predictivo";
             this.btnMantPred.UseVisualStyleBackColor = true;
+            this.btnMantPred.Click += new System.EventHandler(this.btnMantPred_Click);
             // 
             // btnMantCorre
             // 
@@ -54,6 +54,7 @@
             this.btnMantCorre.TabIndex = 2;
             this.btnMantCorre.Text = "Matenimiento Correctivo";
             this.btnMantCorre.UseVisualStyleBackColor = true;
+            this.btnMantCorre.Click += new System.EventHandler(this.btnMantCorre_Click);
             // 
             // btnOrdenMant
             // 
@@ -64,6 +65,7 @@
             this.btnOrdenMant.TabIndex = 3;
             this.btnOrdenMant.Text = "Ordenes de Mantenimiento";
             this.btnOrdenMant.UseVisualStyleBackColor = true;
+            this.btnOrdenMant.Click += new System.EventHandler(this.btnOrdenMant_Click);
             // 
             // btnMantPrev
             // 
@@ -74,12 +76,12 @@
             this.btnMantPrev.TabIndex = 0;
             this.btnMantPrev.Text = "Mantenimiento Preventivo";
             this.btnMantPrev.UseVisualStyleBackColor = true;
+            this.btnMantPrev.Click += new System.EventHandler(this.btnMantPrev_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(914, 550);
             this.Controls.Add(this.btnMantPrev);

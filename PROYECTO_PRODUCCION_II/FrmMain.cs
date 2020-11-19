@@ -52,16 +52,16 @@ namespace PROYECTO_PRODUCCION_II
             frm.Show();
         }
 
-        private void btmMantCorre_Click(object sender, EventArgs e)
+        private void btnMantPred_Click(object sender, EventArgs e)
         {
-            FrmMantCorrec frm = new FrmMantCorrec(cnt);
+            FrmMantPred frm = new FrmMantPred(cnt);
             frm.MdiParent = this;
             frm.Show();
         }
 
-        private void btnMantPred_Click(object sender, EventArgs e)
+        private void btnMantCorre_Click(object sender, EventArgs e)
         {
-            FrmMantPred frm = new FrmMantPred(cnt);
+            FrmMantCorrec frm = new FrmMantCorrec(cnt);
             frm.MdiParent = this;
             frm.Show();
         }
@@ -72,6 +72,5 @@ namespace PROYECTO_PRODUCCION_II
             frm.MdiParent = this;
             frm.Show();
         }
-
     }
 }
