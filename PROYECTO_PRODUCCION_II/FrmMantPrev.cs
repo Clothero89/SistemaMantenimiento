@@ -25,7 +25,7 @@ namespace PROYECTO_PRODUCCION_II
 
         private void FrmMantPrev_Load(object sender, EventArgs e)
         {
-            dgvMantenimientos.DataSource = cnt.CargarConsulta("SELECT * FROM Mantenimiento");
+            /*dgvMantenimientos.DataSource = cnt.CargarConsulta("SELECT * FROM Mantenimiento");
 
             cmbEmpleado.DataSource = cnt.CargarProcedimiento("VerEmpleados");
             cmbEmpleado.DisplayMember = "Primer_Nombre";
@@ -33,7 +33,7 @@ namespace PROYECTO_PRODUCCION_II
 
             cmbEquipo.DataSource = cnt.CargarConsulta("SELECT * FROM EQUIPO");
             cmbEquipo.DisplayMember = "Nombre";
-            cmbEquipo.ValueMember = "ID_Equipo";
+            cmbEquipo.ValueMember = "ID_Equipo";*/
         }
 
         private void btnClose_Click(object sender, EventArgs e)
