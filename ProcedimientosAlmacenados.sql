@@ -143,6 +143,18 @@ on f.ID_Fallo = fe.ID_Fallo
 where p.Nombre = @Nombre
 group by p.ID_Pieza
 
-Exec CantidadFallosPieza 'Válvula de gas'
+go
 
-Select * from OrdenMantenimiento
+create proc MostrarPiezaFallo
+@Nombre varchar(30)
+as
+Select distinct(p.Nombre) from FalloEquipoMto fem
+inner join FalloEquipo fe
+on fe.ID_FalloEquipo = fem.ID_FalloEquipo
+inner join PiezaFalloEq pfe
+on pfe.ID_FalloEquipo = fe.ID_FalloEquipo
+inner join Pieza p
+on p.ID_Pieza = pfe.ID_Pieza
+inner join Fallo f
+on f.ID_Fallo = fe.ID_Fallo
+where f.Nombre = @Nombre
