@@ -176,6 +176,7 @@
             this.btnVerPiezas.TabIndex = 20;
             this.btnVerPiezas.Text = "Ver piezas";
             this.btnVerPiezas.UseVisualStyleBackColor = true;
+            this.btnVerPiezas.Click += new System.EventHandler(this.btnVerPiezas_Click);
             // 
             // label8
             // 

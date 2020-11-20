@@ -59,6 +59,23 @@ namespace PROYECTO_PRODUCCION_II
             return cb;
         }
 
+        public DataTable cargarPiezasCorrectivo()
+        {
+            c = new Connection("usuario", "01234567");
+            SqlCommand cmd = new SqlCommand("MostraPiezaFallo", c.conector);
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            cmd.Parameters.Add(new SqlParameter("@Tipo", "Predictivo"));
+
+            SqlDataAdapter sqa = new SqlDataAdapter();
+            sqa.SelectCommand = cmd;
+            DataTable dt = new DataTable();
+            sqa.Fill(dt);
+
+
+            return dt;
+        }
+
         public ComboBox CargarFallo(ComboBox cb, String campo)
         {
             c = new Connection("usuario", "01234567");

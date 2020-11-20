@@ -18,12 +18,14 @@ namespace PROYECTO_PRODUCCION_II
         public FrmMantCorrec()
         {
             InitializeComponent();
+            this.dgvMantenimientosCorr.DataSource = m.cargarOrden();
         }
 
         public FrmMantCorrec(Connection cnt)
         {
             this.cnt = cnt;
             InitializeComponent();
+            this.dgvMantenimientosCorr.DataSource = m.cargarOrden();
             m.CargarComboBoxs(this.cmbEmpleado, "VerEmpleados", "Nombre");
             m.CargarComboBoxs(this.cmbEquipo, "CargarEquipo", "Nombre");
         }
@@ -53,6 +55,11 @@ namespace PROYECTO_PRODUCCION_II
             int id = m.obtenerIdEquipoMto(this.cmbFallo.SelectedItem.ToString(), this.cmbEquipo.SelectedItem.ToString(), "Predictivo");
 
             m.RegistrarOrden(id, costo, this.Fecha.Value.ToString("yyyy-MM-dd"), this.txtDuracion.Text, "XDXDXD");
+        }
+
+        private void btnVerPiezas_Click(object sender, EventArgs e)
+        {
+            this.dgvMantenimientosCorr.DataSource = m.cargarPiezasCorrectivo();
         }
     }
 }
