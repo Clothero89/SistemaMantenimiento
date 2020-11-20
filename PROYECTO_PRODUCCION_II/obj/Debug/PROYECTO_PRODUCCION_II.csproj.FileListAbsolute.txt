@@ -78,3 +78,4 @@ C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\D
 C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.pdb
 C:\Users\Socrates\source\repos\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.UserControlPrueba.resources
 >>>>>>> Socrates
+C:\Users\ferna\OneDrive\Escritorio\Sistema_Mantenimiento\Proyecto\SistemaMantenimiento\PROYECTO_PRODUCCION_II\obj\Debug\PROYECTO_PRODUCCION_II.UserControlPrueba.resources

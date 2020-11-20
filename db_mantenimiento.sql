@@ -170,6 +170,6 @@ sp_addrolemember 'db_accessadmin', 'usuario'
 
 go
 
-CREATE PROCEDURE VerEmpleados
+Alter proc VerEmpleados
 As
-SELECT * from Empleado
+SELECT e.Primer_Nombre+' '+e.Primer_Apellido as Nombre from Empleado e

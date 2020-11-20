@@ -19,35 +19,17 @@ namespace PROYECTO_PRODUCCION_II
         public FrmMantPred()
         {
             InitializeComponent();
-            this.dataGridView2.DataSource = m.cargarUsuario();
+           this.dataGridView2.DataSource = m.cargarOrden();
         }
 
         public FrmMantPred(Connection cnt)
         {
             this.cnt = cnt;
             InitializeComponent();
-            this.dataGridView2.DataSource = m.cargarUsuario();
-            /*cnt = new Connection("usuario", "01234567");
-            SqlCommand cmd = new SqlCommand(
-             "Select e.Nombre as [Nombre del equipo], m.Nombre as [Tipo de Mantenimiento],"
-                               + " om.FechaRegistro, om.Costo, om.Descripcion as [Fecha Registro] from"
-                               + " OrdenMantenimiento om"
-                               + " inner join FalloEquipoMto fem"
-                               + " on fem.ID_FalloEqMto = om.ID_FalloEqMto"
-                               + " inner join Mantenimiento m"
-                               + " on m.ID_Mantenimiento = fem.ID_Mantenimiento"
-                               + " inner join FalloEquipo fe"
-                               + " on fe.ID_FalloEquipo = fem.ID_FalloEquipo"
-                               + " inner join Fallo f"
-                               + " on f.ID_Fallo = fe.ID_Fallo"
-                               + " inner join Equipo e"
-                               + " on e.ID_Equipo = fe.ID_Equipo", cnt.conector);
-
-            SqlDataAdapter sqa = new SqlDataAdapter();
-            sqa.SelectCommand = cmd;
-            DataTable dt = new DataTable();
-            sqa.Fill(dt);
-            this.dataGridView2.DataSource = dt;*/
+            this.dataGridView2.DataSource = m.cargarOrden();
+            m.CargarComboBoxs(this.cmbEmpleado, "VerEmpleados", "Nombre");
+            m.CargarComboBoxs(this.cmbEquipo, "CargarEquipo", "Nombre");
+            
         }
 
         private void FrmMantPred_Load(object sender, EventArgs e)
@@ -57,7 +39,24 @@ namespace PROYECTO_PRODUCCION_II
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
+            float costo = float.Parse(this.costoInsp.Text) + float.Parse(this.costoAlter.Text);
+            costo += m.obtenerCostoPieza(this.cmbPieza.SelectedItem.ToString());
 
+            int id = m.obtenerIdEquipoMto(this.cmbFallo.SelectedItem.ToString(), 
+                this.cmbEquipo.SelectedItem.ToString(), "Predictivo");
+
+            m.RegistrarOrden(id, costo, this.fecha.Value.ToString("yyyy-MM-dd"), this.duracion.Text, "XDXDXD");
         }
+
+        private void CargarPiezas(object sender, EventArgs e)
+        {
+            m.CargarPieza(this.cmbPieza, "CargarPiezaEquipo", "Equipo", this.cmbEquipo.SelectedItem.ToString());
+        }
+
+        private void CargarFallo(object sender, EventArgs e)
+        {
+            m.CargarFallo(this.cmbFallo, this.cmbPieza.SelectedItem.ToString());
+        }
+
     }
 }
