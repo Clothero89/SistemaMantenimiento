@@ -34,15 +34,15 @@
             this.btnGenerar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Fecha = new System.Windows.Forms.DateTimePicker();
             this.dgvPiezas = new System.Windows.Forms.DataGridView();
             this.btnVerPiezas = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtDuracion = new System.Windows.Forms.TextBox();
+            this.cmbFallo = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.cmbEquipo = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -74,15 +74,15 @@
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(250)))), ((int)(((byte)(238)))));
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.Fecha);
             this.groupBox1.Controls.Add(this.dgvPiezas);
             this.groupBox1.Controls.Add(this.btnVerPiezas);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.txtDuracion);
+            this.groupBox1.Controls.Add(this.cmbFallo);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.cmbEquipo);
             this.groupBox1.Controls.Add(this.label2);
@@ -144,15 +144,15 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Fecha registro:";
             // 
-            // dateTimePicker1
+            // Fecha
             // 
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(691, 94);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(162, 22);
-            this.dateTimePicker1.TabIndex = 8;
+            this.Fecha.Enabled = false;
+            this.Fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.Fecha.Location = new System.Drawing.Point(691, 94);
+            this.Fecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Fecha.Name = "Fecha";
+            this.Fecha.Size = new System.Drawing.Size(162, 22);
+            this.Fecha.TabIndex = 8;
             // 
             // dgvPiezas
             // 
@@ -176,7 +176,6 @@
             this.btnVerPiezas.TabIndex = 20;
             this.btnVerPiezas.Text = "Ver piezas";
             this.btnVerPiezas.UseVisualStyleBackColor = true;
-            this.btnVerPiezas.Click += new System.EventHandler(this.btnVerPiezas_Click);
             // 
             // label8
             // 
@@ -216,22 +215,22 @@
             this.label6.TabIndex = 16;
             this.label6.Text = "Duración:";
             // 
-            // textBox2
+            // txtDuracion
             // 
-            this.textBox2.Location = new System.Drawing.Point(161, 186);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(123, 22);
-            this.textBox2.TabIndex = 15;
+            this.txtDuracion.Location = new System.Drawing.Point(161, 186);
+            this.txtDuracion.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDuracion.Name = "txtDuracion";
+            this.txtDuracion.Size = new System.Drawing.Size(123, 22);
+            this.txtDuracion.TabIndex = 15;
             // 
-            // comboBox1
+            // cmbFallo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(161, 141);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(176, 24);
-            this.comboBox1.TabIndex = 12;
+            this.cmbFallo.FormattingEnabled = true;
+            this.cmbFallo.Location = new System.Drawing.Point(161, 141);
+            this.cmbFallo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbFallo.Name = "cmbFallo";
+            this.cmbFallo.Size = new System.Drawing.Size(176, 24);
+            this.cmbFallo.TabIndex = 12;
             // 
             // label4
             // 
@@ -327,7 +326,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnGenerar;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker Fecha;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbEquipo;
         private System.Windows.Forms.Label label2;
@@ -340,8 +339,8 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtDuracion;
+        private System.Windows.Forms.ComboBox cmbFallo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox2;
     }
