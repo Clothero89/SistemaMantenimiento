@@ -18,14 +18,12 @@ namespace PROYECTO_PRODUCCION_II
         public FrmMantCorrec()
         {
             InitializeComponent();
-            this.dgvMantenimientosCorr.DataSource = m.cargarOrden();
         }
 
         public FrmMantCorrec(Connection cnt)
         {
             this.cnt = cnt;
             InitializeComponent();
-            this.dgvMantenimientosCorr.DataSource = m.cargarOrden();
             m.CargarComboBoxs(this.cmbEmpleado, "VerEmpleados", "Nombre");
             m.CargarComboBoxs(this.cmbEquipo, "CargarEquipo", "Nombre");
         }
@@ -49,16 +47,12 @@ namespace PROYECTO_PRODUCCION_II
 
         private void btnGenerar_Click(object sender, EventArgs e)
         {
-            //dgvMantenimientosCorr.DataSource = cnt.CargarConsulta("SELECT * FROM Mantenimiento");
-        }
+            float costo = 0;
+            costo += m.obtenerCostoPieza(this.dgvMantenimientosCorr.SelectedRows.Count.ToString());
 
+            int id = m.obtenerIdEquipoMto(this.cmbFallo.SelectedItem.ToString(), this.cmbEquipo.SelectedItem.ToString(), "Predictivo");
 
-        private void btnVerPiezas_Click(object sender, EventArgs e)
-        {
-            //dgvMantenimientosCorr.DataSource = cnt.CargarConsulta("SELECT * FROM Mantenimiento");
-            /*cmbEmpleado.DataSource = cnt.CargarProcedimiento("VerEmpleados");
-            cmbEmpleado.DisplayMember = "Primer_Nombre";
-            cmbEmpleado.ValueMember = "ID_Empleado";*/
+            m.RegistrarOrden(id, costo, this.Fecha.Value.ToString("yyyy-MM-dd"), this.txtDuracion.Text, "XDXDXD");
         }
     }
 }
