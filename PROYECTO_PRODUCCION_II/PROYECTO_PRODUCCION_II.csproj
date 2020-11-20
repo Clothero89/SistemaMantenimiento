@@ -107,6 +107,7 @@
     <Compile Include="UserControlPrueba.Designer.cs">
       <DependentUpon>UserControlPrueba.cs</DependentUpon>
     </Compile>
+    <Compile Include="Validaciones.cs" />
     <EmbeddedResource Include="FrmLogIn.resx">
       <DependentUpon>FrmLogIn.cs</DependentUpon>
     </EmbeddedResource>
