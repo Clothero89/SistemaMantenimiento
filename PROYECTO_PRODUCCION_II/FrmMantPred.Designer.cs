@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbFallo = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.costoInsp = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -47,8 +49,6 @@
             this.btnGenerar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cmbFallo = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -81,6 +81,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "MANTENIMIENTO PREDICTIVO";
             // 
+            // cmbFallo
+            // 
+            this.cmbFallo.FormattingEnabled = true;
+            this.cmbFallo.Location = new System.Drawing.Point(448, 83);
+            this.cmbFallo.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbFallo.Name = "cmbFallo";
+            this.cmbFallo.Size = new System.Drawing.Size(114, 21);
+            this.cmbFallo.TabIndex = 27;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(402, 91);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Fallo:";
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -98,6 +117,7 @@
             this.costoInsp.Name = "costoInsp";
             this.costoInsp.Size = new System.Drawing.Size(114, 20);
             this.costoInsp.TabIndex = 24;
+            this.costoInsp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar);
             // 
             // label9
             // 
@@ -116,6 +136,7 @@
             this.duracion.Name = "duracion";
             this.duracion.Size = new System.Drawing.Size(136, 20);
             this.duracion.TabIndex = 22;
+            this.duracion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.validar3);
             // 
             // label7
             // 
@@ -144,6 +165,7 @@
             this.costoAlter.Name = "costoAlter";
             this.costoAlter.Size = new System.Drawing.Size(114, 20);
             this.costoAlter.TabIndex = 15;
+            this.costoAlter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Validar2);
             // 
             // cmbPieza
             // 
@@ -247,6 +269,7 @@
             this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // dataGridView2
             // 
@@ -259,25 +282,6 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(884, 236);
             this.dataGridView2.TabIndex = 16;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(402, 91);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Fallo:";
-            // 
-            // cmbFallo
-            // 
-            this.cmbFallo.FormattingEnabled = true;
-            this.cmbFallo.Location = new System.Drawing.Point(448, 83);
-            this.cmbFallo.Margin = new System.Windows.Forms.Padding(2);
-            this.cmbFallo.Name = "cmbFallo";
-            this.cmbFallo.Size = new System.Drawing.Size(114, 21);
-            this.cmbFallo.TabIndex = 27;
             // 
             // FrmMantPred
             // 

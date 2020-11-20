@@ -143,17 +143,36 @@ namespace PROYECTO_PRODUCCION_II
 
         public float obtenerCostoPieza(String nombre)
         {
-            float costo = 1;
+            float costo = 0;
             c = new Connection("usuario", "01234567");
-            Console.WriteLine(nombre);
             SqlCommand cmd = new SqlCommand("ObtenerCostoPieza", c.conector);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@Nombre", nombre);
-            //SqlDataReader resultado = cmd.ExecuteReader();
-            //MessageBox.Show(resultado["Costo"].ToString());
             costo = float.Parse(cmd.ExecuteScalar().ToString());
 
             return costo;
+        }
+
+        public int TiempoFallo(String nombre)
+        {
+            c = new Connection("usuario", "01234567");
+            SqlCommand cmd = new SqlCommand("ObtenerTiempoFallo", c.conector);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Nombre", nombre);
+            int tiempo = Convert.ToInt32(cmd.ExecuteScalar());
+
+            return tiempo;
+        }
+
+        public int CantidadFalloPieza(String nombre)
+        {
+            c = new Connection("usuario", "01234567");
+            SqlCommand cmd = new SqlCommand("CantidadFallosPieza", c.conector);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.Add("@Nombre", nombre);
+            int cantidad = Convert.ToInt32(cmd.ExecuteScalar());
+
+            return cantidad;
         }
 
     }

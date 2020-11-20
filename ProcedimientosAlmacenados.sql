@@ -29,7 +29,7 @@ go
 Create proc CargarPieza
 @Equipo varchar(25), @Fallo varchar(25), @Mto varchar(25)
 as
-Select p.Nombre from Pieza p
+Select distinct(p.Nombre) from Pieza p
 inner join PiezaFalloEq pfe
 on pfe.ID_Pieza = p.ID_Pieza
 inner join FalloEquipo fe
@@ -50,7 +50,7 @@ go
 Create proc CargarFallo
 @Pieza varchar(30)
 as
-Select f.Nombre from Fallo f
+Select distinct(f.Nombre) from Fallo f
 inner join FalloEquipo fe
 on fe.ID_Fallo = f.ID_Fallo
 inner join FalloEquipoMto fem
@@ -76,7 +76,7 @@ go
 Create proc CargarPiezaEquipo
 @Equipo varchar(25)
 as
-Select p.Nombre from Pieza p
+Select distinct(p.Nombre) from Pieza p
 inner join PiezaFalloEq pfe
 on pfe.ID_Pieza = p.ID_Pieza
 inner join FalloEquipo fe
@@ -119,3 +119,30 @@ Select top 1 p.Costo from Pieza p
 where p.Nombre = @Nombre
 
 exec ObtenerCostoPieza 'Válvula de gas'
+
+go
+
+Create proc ObtenerTiempoFallo
+@Nombre varchar(25)
+as
+Select p.TiempoFallo from Pieza p 
+where p.Nombre = @Nombre
+
+go
+
+Create proc CantidadFallosPieza
+@Nombre varchar(25)
+as
+Select count(distinct(p.Nombre)) as Cantidad from PiezaFalloEq pfe
+inner join Pieza p
+on p.ID_Pieza = pfe.ID_Pieza
+inner join FalloEquipo fe
+on fe.ID_FalloEquipo = pfe.ID_FalloEquipo
+inner join Fallo f
+on f.ID_Fallo = fe.ID_Fallo
+where p.Nombre = @Nombre
+group by p.ID_Pieza
+
+Exec CantidadFallosPieza 'Válvula de gas'
+
+Select * from OrdenMantenimiento
