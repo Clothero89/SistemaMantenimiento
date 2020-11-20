@@ -28,7 +28,7 @@ namespace PROYECTO_PRODUCCION_II
         }
 
         //Carga los datos a partir de un procedimiento hacía una tabla
-        public DataTable CargarProcedimiento(string sp)
+        /*public DataTable CargarProcedimiento(string sp)
         {
             SqlCommand cmd = new SqlCommand();
 
@@ -138,7 +138,7 @@ namespace PROYECTO_PRODUCCION_II
 
                 return;
             }
-        }
+        }*/
 
     }
 }
