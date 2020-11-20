@@ -32,6 +32,8 @@ namespace PROYECTO_PRODUCCION_II
 
         private void FrmMantCorrec_Load(object sender, EventArgs e)
         {
+            string variable = "null";
+            int x = 0;
             
             cmbEmpleado.DataSource = cnt.CargarProcedimiento("VerEmpleados");
             cmbEmpleado.DisplayMember = "Primer_Nombre";
